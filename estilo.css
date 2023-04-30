@@ -1,0 +1,13 @@
+.button-insc:hover { 
+	background-color: #4095FC;
+    border-color: #296FC2;
+    color: #FFFFFF;
+}
+
+.button-insc{
+	background-color: #41BFF2;
+    border-color: #2B8EB6;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="venta, online, indumentaria, ropa, zapatillas, zapas, remera, pantalon">
+		<meta name="descriptipn" content="Página de ventas">
+		<meta name="author" content="Martina Ardiles y Matias Ramos">
+		<link rel="icon" href="../images/zapa.ico">
+		<title>Página de Ventas</title>
+		<link rel="stylesheet" type="text/css" href="../estilo.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<a href="../home.html"><input type="button" class="button-insc" value="Home"></a>
+					<a href="../cosas/indumentaria.html"><input type="button" class="button-insc" value="Indumentaria"></a>
+					<a href="../cosas/zapatillas.html"><input type="button" class="button-insc" value="Zapatillas"></a>
+					<a href="../cosas/contacto.html"><input type="button" class="button-insc" value="Contacto"></a>
+					<a href="../cosas/novedades.html"><input type="button" class="button-insc" value="Novedades"></a>
+					<form action="/buscar" method="GET">
+						<input type="text" name="q" placeholder="Buscar...">
+						<button type="submit">Buscar</button>
+					</form>
+				</ul>
+			</nav>
+		</header>		
+		<h1>Página de Ventas</h1> 
+		<article>
+			<section>
+				<p>					
+					<br>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam animi iusto praesentium quia, similique autem fugiat veniam eum fugit, error quibusdam commodi distinctio rem! Cupiditate temporibus libero expedita eius enim!
+					<br>
+				</p>
+			</section>
+		</article>
+
+		<p>
+			<img class="img-fluid" width="1000px" img length="600px" src="../images/titulo.jpeg">
+		</p>
+
+		<aside>
+			<h2>COMUNICATE CON NOSOTROS  POR NUESTRAS REDES SOCIALES</h2>
+		</aside>
+		<p>
+			<img class="img-fluid" width="50px" img length="50px" src="../images/WhatsApp.jpeg" alt="WhatsApp" title="WhatsApp">
+			<img class="img-fluid" width="50px" img length="50px" src="../images/instagram.png." alt="Instagram" title="Instagram">
+            <img class="img-fluid" width="50px" img length="50px" src="../images/facebook.png." alt="Facebook" title="Facebook">
+		</p>
+        <aside>
+			<h2>DEJANOS TU MENSAJE</h2>
+            <form action="send_form.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+              
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+              
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required><br>
+              
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea><br>
+              
+                <input type="submit" value="Enviar">
+            </form>
+              
+		</aside>
+		<footer>
+			<h4>Copyright - Todos los derechos reservados</h4>
+		</footer>	
+	</body>
+</html>

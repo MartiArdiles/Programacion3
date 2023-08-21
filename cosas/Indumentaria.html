@@ -8,31 +8,42 @@
 	<title>Pagina de ventas</title>
 	<link rel="stylesheet" type="text/css" href="../estilo.css">
 </head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				<a href="../home.html"><input type="button" class="button-insc" value="Inicio"></a>
-				<a href="../cosas/indumentaria.html"><input type="button" class="button-insc" value="Indumentaria"></a>
-				<a href="../cosas/zapatillas.html"><input type="button" class="button-insc" value="Zapatillas"></a>
-				<a href="../cosas/contacto.html"><input type="button" class="button-insc" value="Contacto"></a>
-				<a href="../cosas/novedades.html"><input type="button" class="button-insc" value="Novedades"></a>
-				<form action="/buscar" method="GET">
-					<input type="text" name="q" placeholder="Buscar...">
-					<button type="submit">Buscar</button>
-				</form>
+<body class="cuerpo">
+	<header class="barra-nav">
+		<nav class="navegador">
+			<div class="logo">
+				<img alt="logo" width="200px" img length="200px" src="../images/logo.png">
+			</div>
+			<ul class="botones">
+				<a href="../home.html"><input type="button" class="button-inicio" value="Inicio"></a>
+				<a href="cosas/indumentaria.html"><input type="button" class="button-inicio"
+						value="Indumentaria"></a>
+				<a href="cosas/zapatillas.html"><input type="button" class="button-inicio" value="Zapatillas"></a>
+				<a href="cosas/contacto.html"><input type="button" class="button-inicio" value="Contacto"></a>
+				<a href="cosas/novedades.html"><input type="button" class="button-inicio" value="Novedades"></a>					
 			</ul>
+			<div class="busqueda">
+				<input placeholder="Buscar" type="search" class="input">
+			</div>				
 		</nav>
-    </header>
+	</header>
 	<h1>Página de Ventas</h1>
 	<aside>
-		<h2>Indumentaria</h2>
+		<h2 class="titulo-productos">Indumentaria</h2>
 	</aside>
-	<p>
-		<img class="img-fluid" width="300px" img length="300px" src="../images/buzo-hombre.jpeg" alt="Buzo Hm" title="Buzo Hm">
-		<img class="img-fluid" width="300px" img length="300px" src="../images/buzo-fem.jpeg" alt="Buzo Fem" title="Buzo Fem">
-		<img class="img-fluid" width="300px" img length="300px" src="../images/remera.jpeg" alt="Remera" title="Remera">
-	</p>
+	<div class="productos-general">
+			<div class="box-producto">
+				<img class="productos" width="300px" img length="300px" src="../images/buzo-hombre.jpeg" alt="Buzo Hm" title="Buzo Hm">
+			</div>
+
+			<div class="box-producto">
+				<img class="productos" width="300px" img length="300px" src="../images/buzo-fem.jpeg" alt="Buzo Fem" title="Buzo Fem">
+			</div>
+			
+			<div class="box-producto">
+				<img class="productos" width="300px" img length="300px" src="../images/remera.jpeg" alt="Remera" title="Remera">
+			</div>
+    </div>
 	<section class="vtex-store-components-3-x-container ph3 ph5-m ph2-xl mw9 center ">
 		<div class="flex mt0 mb0 pt0 pb0    justify-start vtex-flex-layout-0-x-flexRowContent vtex-flex-layout-0-x-flexRowContent--ft-met-pago items-stretch w-100">
 			<div class="pr0 items-stretch vtex-flex-layout-0-x-stretchChildrenWidth   flex" style="width: 100%;">

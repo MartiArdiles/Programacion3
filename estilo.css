@@ -11,3 +11,83 @@
     color: #FFFFFF;
 }
 
+.Contenedor-Filtros {
+    display: flex;
+}
+
+aside {
+  background-color: white;
+  padding: 1rem;
+  width:  300px;
+  position: sticky;
+  top:  0;
+}
+
+
+#Filtros {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.Filtros-Opciones{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.Filtros-Opciones label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+
+.Talles-Opciones {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 0.5rem;
+}
+
+.Talle-Opcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Talle-Opcion.selected {
+    background-color: RGB(40,39,39);
+    color: RGB(40,39,39);
+}
+
+.Barra-Precio{
+    margin-top: 1rem;
+}
+
+.Filtro-Precio{
+    width: 100%;
+}
+
+.Deslizador {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.Filtro-Precio::-webkit-slider-thumb {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+}
+
+.Filtro-Precio::-webkit-slider-runnable-track {
+    background-color: white ;
+    height: 3px;
+}

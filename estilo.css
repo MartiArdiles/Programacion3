@@ -192,7 +192,18 @@
 
 .footer{
     background-color: white;
+}  
+
+.contactanos{
+    color: #fff; 
+}
+
+.mensaje{
+    color: #fff;
 }    
 
+.formulario-contacto{
+    text-align: center;
+}    
 
 

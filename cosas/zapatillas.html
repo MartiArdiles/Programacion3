@@ -9,31 +9,33 @@
 	<title>Pagina de ventas</title>
 	<link rel="stylesheet" type="text/css" href="../estilo.css">
 </head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				<a href="../home.html"><input type="button" class="button-insc" value="Inicio"></a>
-				<a href="../cosas/indumentaria.html"><input type="button" class="button-insc" value="Indumentaria"></a>
-				<a href="../cosas/zapatillas.html"><input type="button" class="button-insc" value="Zapatillas"></a>
-				<a href="../cosas/contacto.html"><input type="button" class="button-insc" value="Contacto"></a>
-				<a href="../cosas/novedades.html"><input type="button" class="button-insc" value="Novedades"></a>
-				<form action="/buscar" method="GET">
-					<input type="text" name="q" placeholder="Buscar...">
-					<button type="submit">Buscar</button>
-				</form>
+<body class="cuerpo">
+	<header class="barra-nav">
+		<nav class="navegador">
+			<div class="logo">
+				<img alt="logo" width="200px" img length="200px" src="../images/logo.png">
+			</div>
+			<ul class="botones">
+				<a href="../home.html"><input type="button" class="button-inicio" value="Inicio"></a>
+				<a href="../cosas/indumentaria.html"><input type="button" class="button-inicio" value="Indumentaria"></a>
+				<a href="../cosas/zapatillas.html"><input type="button" class="button-inicio" value="Zapatillas"></a>
+				<a href="../cosas/contacto.html"><input type="button" class="button-inicio" value="Contacto"></a>
+				<a href="../cosas/novedades.html"><input type="button" class="button-inicio" value="Novedades"></a>
 			</ul>
+			<div class="busqueda">
+				<input placeholder="Buscar" type="search" class="input">
+			</div>
 		</nav>
     </header>
 	<h1>Página de Ventas</h1>
 	<aside>
-		<h2>Zapatillas</h2>
+		<h2 class="titulo-productos">Zapatillas</h2>
 	</aside>
-	<h1>Filtros:</h1>
-	<div class="Contenedor-Filtros">
+	<h1 color="white">Filtros:</h1>
+	<div class="Contenedor-Filtros" style="background-color: grey;">
 		<aside>
 			<div id="Filtros">
-				<h2>Genero: </h2>
+				<h2 style="color: white" class="tipos-filtros">Genero: </h2>
 				  <div class="Filtros-Opciones">
 					<input type="checkbox" class="checkbox" data-filter="gender" data-value="Femenino">
 					<label for="Femenino">Femenino</label>
@@ -46,7 +48,7 @@
 					<input type="checkbox" class="checkbox" data-filter="gender" data-value="Todos">
 					<label for="Todos">Todos</label>
 				  </div>
-				<h2>Marca: </h2>
+				<h2 style="color: white">Marca: </h2>
 				<div class="Filtros-Opciones">
 					<input type="checkbox" class="checkbox" data-filter="gender" data-value="Adidas">
 					<label for="Adidas">Adidas</label>
@@ -72,7 +74,7 @@
 					<label for="Todas">Todas</label>
 				</div>
 
-				<h2>Talle: </h2>
+				<h2 style="color: white">Talle: </h2>
 				<div class="Talles-Opciones">
 					<div class="Talle-Opcion" data-filter="size" data-value="35"> 35</div>
 					<div class="Talle-Opcion" data-filter="size" data-value="36"> 36</div>
@@ -86,37 +88,69 @@
 					<div class="Talle-Opcion" data-filter="size" data-value="44"> 44</div>
 				</div>
 
-				<h2>Precio: </h2>
+				<h2 style="color: white">Precio: </h2>
 				<div class="Barra-Precio">
 					<input type="range" class="Filtro-Precio" data-filter="price" min="0" max="100000" step="1000">
 					<div class="Deslizador">
-						<span class="min-label">$0</span>
-						<span class="max-label">$100000</span>
+						<span class="min-label" style="color: white">$0</span>
+						<span class="max-label" style="color: white">$100000</span>
 					</div>
 				</div>
-
+				
 			</div>
 		</aside>
     </div>
-	<p>
-		<img class="img-fluid" width="300px" img length="300px" src="../images/zapablanca.jpeg" alt="Zapas verdes" title="Zapas verdes">
-		<img class="img-fluid" width="300px" img length="300px" src="../images/zapazmulticolor.jpeg" alt="Zapas multicolor" title="Zapas multicolor">
-		<img class="img-fluid" width="300px" img length="300px" src="../images/zapazverdes.jpeg" alt="Zapas verdes" title="Zapas verdes">
-	</p>
-	<section class="vtex-store-components-3-x-container ph3 ph5-m ph2-xl mw9 center ">
-		<div class="flex mt0 mb0 pt0 pb0    justify-start vtex-flex-layout-0-x-flexRowContent vtex-flex-layout-0-x-flexRowContent--ft-met-pago items-stretch w-100">
-			<div class="pr0 items-stretch vtex-flex-layout-0-x-stretchChildrenWidth   flex" style="width: 100%;">
-			   <div class="cero26-theme-0-x-medios_pago_container">
-				<img alt="MERCADO PAGO" crossorigin="anonymous" class="vtex-render-runtime-8-x-lazyload ls-is-cached lazyloaded" data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/mercado-pago___72e7aa2ffbb58d4d1814bd7b112ab4e1.svg" loading="lazy" src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/mercado-pago___72e7aa2ffbb58d4d1814bd7b112ab4e1.svg">
-				<img alt="VISA" crossorigin="anonymous" class="vtex-render-runtime-8-x-lazyload ls-is-cached lazyloaded" data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/visa___ebca95f156bd36dbc03625849cdc7e15.svg" loading="lazy" src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/visa___ebca95f156bd36dbc03625849cdc7e15.svg">
-				<img alt="MASTERCARD" crossorigin="anonymous" class="vtex-render-runtime-8-x-lazyload ls-is-cached lazyloaded" data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/mastercard___7f0b6e086dd0d6cf2a6406e4b128eedb.svg" loading="lazy" src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/mastercard___7f0b6e086dd0d6cf2a6406e4b128eedb.svg">
-				<img alt="AMERICAN EXPRESS" crossorigin="anonymous" class="vtex-render-runtime-8-x-lazyload ls-is-cached lazyloaded" data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/american-express___5f158bd210a9b080d61251b5b5a5a814.svg" loading="lazy" src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/american-express___5f158bd210a9b080d61251b5b5a5a814.svg">
-				<img alt="NARANJA" crossorigin="anonymous" class="vtex-render-runtime-8-x-lazyload ls-is-cached lazyloaded" data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/naranja___004f83395ae684b4bf1cacb8b173f231.png" loading="lazy" src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/naranja___004f83395ae684b4bf1cacb8b173f231.png">
-				<img alt="PAGO FACIL" crossorigin="anonymous" class="vtex-render-runtime-8-x-lazyload ls-is-cached lazyloaded" data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/pago-facil___9e4fa5e4372e805a34c7b22e52f29598.svg" loading="lazy" src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/pago-facil___9e4fa5e4372e805a34c7b22e52f29598.svg">
-				<img alt="RAPIPAGO" crossorigin="anonymous" class="vtex-render-runtime-8-x-lazyload ls-is-cached lazyloaded" data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/rapipago___e364d2cb91176ba271c74189f93b6464.svg" loading="lazy" src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/rapipago___e364d2cb91176ba271c74189f93b6464.svg"></div>                 
-			</div>
+	<div class="productos-general">
+		<div class="box-producto">
+			<img class="productos" width="300px" img length="300px" src="../images/zapablanca.jpeg" alt="Zapas verdes" title="Zapas blancas">
 		</div>
-	</section>
+
+		<div class="box-producto">
+			<img class="productos" width="300px" img length="300px" src="../images/zapazmulticolor.jpeg" alt="Zapas multicolor" title="Zapas multicolor">
+		</div>
+		
+		<div class="box-producto">
+			<img class="productos" width="300px" img length="300px" src="../images/zapazverdes.jpeg" alt="Zapas verdes" title="Zapas verdes">
+		</div>
+    </div>
+	<br>
+		<section class="logos-pagos">
+			<div class="logoSS-pagoSS">
+				<div class="logoSS-pagoSS" style="width: 100%;">
+					<div class="logo-pago">
+						<img alt="MERCADO PAGO" crossorigin="anonymous" class="logo-pago"
+							data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/mercado-pago___72e7aa2ffbb58d4d1814bd7b112ab4e1.svg"
+							loading="lazy"
+							src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/mercado-pago___72e7aa2ffbb58d4d1814bd7b112ab4e1.svg">
+						<img alt="VISA" crossorigin="anonymous" class="logo-pago"
+							data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/visa___ebca95f156bd36dbc03625849cdc7e15.svg"
+							loading="lazy"
+							src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/visa___ebca95f156bd36dbc03625849cdc7e15.svg"><img
+							alt="MASTERCARD" crossorigin="anonymous" class="logo-pago"
+							data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/mastercard___7f0b6e086dd0d6cf2a6406e4b128eedb.svg"
+							loading="lazy"
+							src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/mastercard___7f0b6e086dd0d6cf2a6406e4b128eedb.svg"><img
+							alt="AMERICAN EXPRESS" crossorigin="anonymous" class="logo-pago"
+							data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/american-express___5f158bd210a9b080d61251b5b5a5a814.svg"
+							loading="lazy"
+							src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/american-express___5f158bd210a9b080d61251b5b5a5a814.svg"><img
+							alt="NARANJA" crossorigin="anonymous" class="logo-pago"
+							data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/naranja___004f83395ae684b4bf1cacb8b173f231.png"
+							loading="lazy"
+							src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/naranja___004f83395ae684b4bf1cacb8b173f231.png"><img
+							alt="PAGO FACIL" crossorigin="anonymous" class="logo-pago"
+							data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/pago-facil___9e4fa5e4372e805a34c7b22e52f29598.svg"
+							loading="lazy"
+							src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/pago-facil___9e4fa5e4372e805a34c7b22e52f29598.svg"><img
+							alt="RAPIPAGO" crossorigin="anonymous" class="logo-pago"
+							data-src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/rapipago___e364d2cb91176ba271c74189f93b6464.svg"
+							loading="lazy"
+							src="https://cero26.vtexassets.com/assets/vtex/assets-builder/cero26.theme/0.0.33/img/footer/rapipago___e364d2cb91176ba271c74189f93b6464.svg">
+					</div>
+				</div>
+			</div>
+		</section>
+	<br>
 	<footer>
 		<h4>Copyright - Todos los derechos reservados</h4>
 	</footer>

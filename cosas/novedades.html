@@ -10,32 +10,28 @@
 		<title>Página de Ventas</title>
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
 	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<a href="../home.html"><input type="button" class="button-insc" value="Home"></a>
-					<a href="../cosas/indumentaria.html"><input type="button" class="button-insc" value="Indumentaria"></a>
-					<a href="../cosas/zapatillas.html"><input type="button" class="button-insc" value="Zapatillas"></a>
-					<a href="../cosas/contacto.html"><input type="button" class="button-insc" value="Contacto"></a>
-					<a href="../cosas/novedades.html"><input type="button" class="button-insc" value="Novedades"></a>
-					<form action="/buscar" method="GET">
-						<input type="text" name="q" placeholder="Buscar...">
-						<button type="submit">Buscar</button>
-					</form>
+	<body class="cuerpo">
+		<header class="barra-nav">
+			<nav class="navegador">
+				<div class="logo">
+					<img alt="logo" width="200px" img length="200px" src="../images/logo.png">
+				</div>
+				<ul class="botones">
+					<a href="../home.html"><input type="button" class="button-inicio" value="Inicio"></a>
+					<a href="../cosas/indumentaria.html"><input type="button" class="button-inicio" value="Indumentaria"></a>
+					<a href="../cosas/zapatillas.html"><input type="button" class="button-inicio" value="Zapatillas"></a>
+					<a href="../cosas/contacto.html"><input type="button" class="button-inicio" value="Contacto"></a>
+					<a href="../cosas/novedades.html"><input type="button" class="button-inicio" value="Novedades"></a>
 				</ul>
+				<div class="busqueda">
+					<input placeholder="Buscar" type="search" class="input">
+				</div>
 			</nav>
-		</header>		
-		<h1>Página de Ventas</h1> 
-		<article>
-			<section>
-				<p>					
-					<br>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam animi iusto praesentium quia, similique autem fugiat veniam eum fugit, error quibusdam commodi distinctio rem! Cupiditate temporibus libero expedita eius enim!
-					<br>
-				</p>
-			</section>
-		</article>
+		</header>	
+		<h1>Página de Ventas</h1>
+	<aside>
+		<h2 class="titulo-productos">Novedades</h2>
+	</aside>
         
 		<p>
 			<img class="img-fluid" width="1000px" img length="600px" src="../images/titulo.jpeg">
@@ -44,17 +40,19 @@
 			<h2>Proximamente</h2>
             <h2>Carrusel de imagenes</h2>
 		</aside>
-		<p>
+
+		<div class="productos-general">
 			<a href="cosas/zapatillas.html">
 				<img class="img-fluid" width="300px" img length="300px" src="../images/converse.jpeg" alt="Zapas verdes" title="Zapas verdes">
 			</a>
 			<a href="cosas/indumentaria.html">
 				<img class="img-fluid" width="300px" img length="300px" src="../images/rinonera.jpeg" alt="Buzo Vans" title="Buzo Vans">
 			</a>	
-		</p>
+		</div>
 
-        <h2>10% OFF EN TU PRIMERA COMPRA SUSCRIBIENDOTE A NUESTRO NEWSLETTER</h2>
-        <h2></h2>SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
+        <h2 class="titulo-productos">10% OFF EN TU PRIMERA COMPRA SUSCRIBIENDOTE A NUESTRO NEWSLETTER</h2>
+		
+        <h2>SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
 
         <form action="send_form.php" method="POST">
             <input type="text" id="name" name="name" text="Suscribirse" placeholder="Ingresa tu email..." required><br>
